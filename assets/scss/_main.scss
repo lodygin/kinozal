@@ -1,3 +1,15 @@
+.main {
+  margin-bottom: 45px;
+
+  .user-login {
+    margin-bottom: 60px;
+  }
+
+  .site-search {
+    margin: -15px 0 45px;
+  }
+}
+
 .new-films {
   @extend %section-films;
 
@@ -11,6 +23,10 @@
     margin-top: 0;
     line-height: 0.8;
     margin-bottom: 52px;
+
+    @include xs {
+      font-size: 2rem;
+    }
 
     span {
       position: relative;
@@ -26,6 +42,10 @@
       }
     }
   }
+
+  h3 {
+    @include text-shortener;
+  }
 }
 
 .top-week {
@@ -37,6 +57,14 @@
 
   h2 {
     @extend %h2-main;
+
+    @include xs {
+      font-size: 1.75rem;
+    }
+  }
+
+  h3 {
+    @include text-shortener;
   }
 }
 
@@ -45,11 +73,20 @@
 
   h2 {
     @extend %h2-main;
+
+    @include xs {
+      font-size: 1.75rem;
+    }
   }
 
   h3 {
+    color: $color-primary;
     margin-top: 0;
     transition: color 0.2s ease-in;
+
+    @include xs {
+      font-size: 1.25rem;
+    }
   }
 
   &__item {

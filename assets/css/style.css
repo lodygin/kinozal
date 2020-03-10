@@ -13,6 +13,10 @@
   transition: background-color 0.2s ease-in;
 }
 
+.new-films .thumbnail img, .top-week .thumbnail img {
+  width: 100%;
+}
+
 .new-films .thumbnail:hover, .top-week .thumbnail:hover {
   background-color: #df8a13;
 }
@@ -177,6 +181,18 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
+.main {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.main .site-search {
+  margin: -15px 0 45px;
+}
+
 .new-films h1 {
   font-size: 3rem;
   font-family: "PT Serif", serif;
@@ -199,11 +215,28 @@ a:hover, a:focus {
   height: 3px;
 }
 
+.new-films h3 {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.top-week h3 {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
 .movie-news {
   overflow: hidden;
 }
 
 .movie-news h3 {
+  color: #165690;
   margin-top: 0;
   -webkit-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
@@ -253,6 +286,10 @@ a:hover, a:focus {
 
 .vertical-slider img {
   width: 100%;
+}
+
+.left-sidebar {
+  margin-bottom: 60px;
 }
 
 .site-news__item {
@@ -379,6 +416,54 @@ a:hover, a:focus {
   background-color: #232323;
 }
 
+.footer {
+  padding-top: 45px;
+  background-color: #232323;
+}
+
+.footer ul,
+.footer li {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__link {
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer__link:hover, .footer__link:focus {
+  color: #ffffff;
+}
+
+.footer-e {
+  margin: 20px 0;
+}
+
+.footer h4 {
+  color: #ffffff;
+}
+
+.footer-a a,
+.footer-b a,
+.footer-c a,
+.footer-d a {
+  display: block;
+  color: #6b6f74;
+}
+
+.footer-a a:hover, .footer-a a:focus,
+.footer-b a:hover,
+.footer-b a:focus,
+.footer-c a:hover,
+.footer-c a:focus,
+.footer-d a:hover,
+.footer-d a:focus {
+  color: #ffffff;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
@@ -414,5 +499,17 @@ a:hover, a:focus {
   .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
+  }
+  .new-films h1 {
+    font-size: 2rem;
+  }
+  .top-week h2 {
+    font-size: 1.75rem;
+  }
+  .movie-news h2 {
+    font-size: 1.75rem;
+  }
+  .movie-news h3 {
+    font-size: 1.25rem;
   }
 }
