@@ -1,0 +1,15 @@
+.new-films {
+  .thumbnail {
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+  }
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+  }
+}
