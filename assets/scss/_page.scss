@@ -1,0 +1,111 @@
+.film-video {
+  overflow: hidden;
+
+  h1 {
+    font-size: 3rem;
+    font-family: $font-header;
+    margin-top: 0;
+    line-height: 0.8;
+    margin-bottom: 52px;
+
+    @include xs {
+      font-size: 2rem;
+    }
+
+    span {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1920px;
+        background-color: rgba($color-accent, 0.45);
+        bottom: 14px;
+        left: 104%;
+        height: 3px;
+      }
+    }
+  }
+
+  .embed-responsive {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+  }
+
+  &__well {
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 38px;
+  }
+
+  &__item-info {
+    margin: 0 13px;
+    .badge {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.description {
+  overflow: hidden;
+
+  h2 {
+    @extend %h2-main;
+
+    @include xs {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__well {
+    margin-bottom: 38px;
+  }
+}
+
+.reviews {
+  overflow: hidden;
+
+  h2 {
+    @extend %h2-main;
+
+    @include xs {
+      font-size: 1.75rem;
+    }
+  }
+
+  .panel-heading {
+    background-color: $color-accent;
+    color: $color-light
+  }
+
+  .glyphicon {
+    margin-right: 5px;
+  }
+
+  .panel:last-child {
+    margin-bottom: 42px;
+  }
+}
+
+.form {
+  overflow: hidden;
+
+  h2 {
+    @extend %h2-main;
+
+    @include xs {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__comment {
+    min-height: 215px;
+  }
+
+  .btn {
+    font-size: 1.125rem;
+    float: right;
+    margin-bottom: 20px;
+  }
+}
