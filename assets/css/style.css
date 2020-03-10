@@ -105,8 +105,33 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
+.new-films {
+  overflow: hidden;
+}
+
 .new-films .thumbnail {
   margin-bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.new-films .thumbnail:hover {
+  background-color: #df8a13;
+}
+
+.new-films .thumbnail:hover h3 {
+  color: #ffffff;
+}
+
+.new-films .thumbnail h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 .new-films .row {
@@ -118,6 +143,28 @@ a:hover, a:focus {
   padding-left: 7.5px;
   padding-right: 7.5px;
   margin-bottom: 15px;
+}
+
+.new-films h1 {
+  font-size: 3rem;
+  font-family: "PT Serif", serif;
+  margin-top: 0;
+  line-height: 0.8;
+  margin-bottom: 52px;
+}
+
+.new-films h1 span {
+  position: relative;
+}
+
+.new-films h1 span::after {
+  content: '';
+  position: absolute;
+  width: 1920px;
+  background-color: rgba(223, 138, 19, 0.45);
+  bottom: 14px;
+  left: 104%;
+  height: 3px;
 }
 
 .vertical-slider {
