@@ -1,19 +1,17 @@
-.header-logo__title,
-.header-logo__description {
+.header-logo__title, .header-logo__description {
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
 .navbar-inverse {
-  border-color: transparent;
   background-color: #191919;
+  border-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
   background-color: #053159;
 }
 
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: #517ba2;
 }
 
@@ -23,8 +21,7 @@
   transition: background-color 0.5s;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   background-color: #165690;
 }
 
@@ -34,26 +31,23 @@
 
 .navbar-toggle {
   float: none;
-
   margin-right: 0;
 }
 
 .panel {
   margin-bottom: 30px;
-
   border: none;
   background-color: #f1f1f1;
 }
 
 .panel-info > .panel-heading {
   color: #ffffff;
-  border: none;
   background-color: #df8a13;
+  border: none;
 }
 
 .panel-title {
   letter-spacing: 0.1em;
-
   font-size: 1.2rem;
 }
 
@@ -72,18 +66,16 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
   font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 a {
   color: #165690;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: none;
-
   color: #df8a13;
 }
 
@@ -92,32 +84,25 @@ a:focus {
 }
 
 .header-logo {
-  padding: 100px 0;
-
-  text-align: center;
-
   background-color: #232323;
   background-image: url(../img/header-bg.jpg);
   background-position: 50% 50%;
   background-size: cover;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .header-logo__title {
   display: block;
-
-  color: #df8a13;
-
   font-family: "PT Serif", serif;
+  color: #df8a13;
 }
 
 .header-logo__description {
   display: block;
-
-  letter-spacing: 0.2em;
-
-  color: #ffffff;
-
   font-size: 1.15rem;
+  letter-spacing: 0.2em;
+  color: #ffffff;
 }
 
 .new-films .thumbnail {
@@ -130,24 +115,92 @@ a:focus {
 }
 
 .new-films-item {
-  margin-bottom: 15px;
-  padding-right: 7.5px;
   padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
 }
 
 .vertical-slider {
-  overflow: hidden;
-
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .vertical-slider img {
   width: 100%;
 }
 
+.site-news__item {
+  position: relative;
+  min-height: 85px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.site-news__item:last-child {
+  margin-bottom: 0;
+}
+
+.site-news__item:last-child::after {
+  display: none;
+}
+
+.site-news__item:hover .site-news__title a {
+  color: #df8a13;
+}
+
+.site-news__item:hover .site-news__img {
+  background-color: #df8a13;
+}
+
+.site-news__item::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  background-color: #dddddd;
+  height: 1px;
+  width: calc(100% - 85px);
+}
+
+.site-news__img {
+  float: left;
+  width: 75px;
+  margin: 0 10px 10px 0;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.site-news__img img {
+  width: 100%;
+}
+
+.site-news__title {
+  margin-bottom: 10px;
+}
+
+.site-news__title a {
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.site-news__date {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #8d9196;
+}
+
 .top-films .panel-body {
-  padding-right: 0;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .top-films .list-group {
@@ -157,27 +210,24 @@ a:focus {
 .top-films .badge {
   position: absolute;
   top: 50%;
-  right: 10px;
-
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  right: 10px;
 }
 
 .top-films-item {
-  margin-right: -1px;
-  margin-left: -1px;
   padding: 0;
-
+  background-color: transparent;
   border-top: 1px solid #dddddd;
   border-right: none;
   border-left: none;
-  background-color: transparent;
+  margin-left: -1px;
+  margin-right: -1px;
 }
 
 .top-films-item a {
   display: block;
-
   padding: 10px 40px 10px 15px;
 }
 
@@ -205,9 +255,8 @@ a:focus {
 
 @media (min-width: 576px) {
   .header-logo__title {
-    letter-spacing: 0.33em;
-
     font-size: 3.5rem;
+    letter-spacing: 0.33em;
   }
 }
 
@@ -237,8 +286,7 @@ a:focus {
 
 @media (max-width: 575.8px) {
   .header-logo__title {
-    letter-spacing: 0.2em;
-
     font-size: 2.5rem;
+    letter-spacing: 0.2em;
   }
 }
