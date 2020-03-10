@@ -1,33 +1,8 @@
 .new-films {
-  overflow: hidden;
-  .thumbnail {
-    margin-bottom: 0;
-    transition: background-color 0.2s ease-in;
+  @extend %section-films;
 
-    &:hover {
-      background-color: $color-accent;
-      h3 {
-        color: $color-light;
-      }
-    }
-
-    h3 {
-      font-size: 1rem;
-      text-align: center;
-      margin: 0;
-      font-weight: bold;
-      transition: color 0.2s ease-in;
-    }
-  }
-
-  .row {
-    margin-right: -$gap / 2;
-    margin-left: -$gap / 2;
-  }
   &-item {
-    padding-left: $gap / 2;
-    padding-right: $gap / 2;
-    margin-bottom: $gap;
+    @extend %item-padding;
   }
 
   h1 {
@@ -39,6 +14,7 @@
 
     span {
       position: relative;
+
       &::after {
         content: '';
         position: absolute;
@@ -46,6 +22,46 @@
         background-color: rgba($color-accent, 0.45);
         bottom: 14px;
         left: 104%;
+        height: 3px;
+      }
+    }
+  }
+}
+
+.top-week {
+  @extend %section-films;
+
+  &-item {
+    @extend %item-padding;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-family: $font-header;
+    margin-top: 0;
+    line-height: 0.8;
+    margin: 50px 0 50px 45px;
+
+    span {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1920px;
+        background-color: rgba($color-accent, 0.45);
+        top: 16px;
+        right: 106%;
+        height: 3px;
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1920px;
+        background-color: rgba($color-accent, 0.45);
+        bottom: 9px;
+        left: 105%;
         height: 3px;
       }
     }

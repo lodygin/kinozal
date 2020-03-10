@@ -1,3 +1,38 @@
 %text-shadow {
   text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
 }
+
+%section-films {
+  overflow: hidden;
+
+  .thumbnail {
+    margin-bottom: 0;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+      background-color: $color-accent;
+      h3 {
+        color: $color-light;
+      }
+    }
+
+    h3 {
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+      font-weight: bold;
+      transition: color 0.2s ease-in;
+    }
+  }
+
+  .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+  }
+}
+
+%item-padding {
+  padding-left: $gap / 2;
+  padding-right: $gap / 2;
+  margin-bottom: $gap;
+}
