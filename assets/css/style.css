@@ -42,6 +42,38 @@
   margin-bottom: 15px;
 }
 
+.top-week h2, .movie-news h2 {
+  font-size: 2.5rem;
+  font-family: "PT Serif", serif;
+  margin-top: 0;
+  line-height: 0.8;
+  margin: 50px 0 50px 45px;
+}
+
+.top-week h2 span, .movie-news h2 span {
+  position: relative;
+}
+
+.top-week h2 span::before, .movie-news h2 span::before {
+  content: '';
+  position: absolute;
+  width: 1920px;
+  background-color: rgba(223, 138, 19, 0.45);
+  top: 16px;
+  right: 106%;
+  height: 3px;
+}
+
+.top-week h2 span::after, .movie-news h2 span::after {
+  content: '';
+  position: absolute;
+  width: 1920px;
+  background-color: rgba(223, 138, 19, 0.45);
+  bottom: 11px;
+  left: 105%;
+  height: 3px;
+}
+
 .navbar-inverse {
   background-color: #191919;
   border-color: transparent;
@@ -167,36 +199,51 @@ a:hover, a:focus {
   height: 3px;
 }
 
-.top-week h2 {
-  font-size: 2.5rem;
-  font-family: "PT Serif", serif;
+.movie-news {
+  overflow: hidden;
+}
+
+.movie-news h3 {
   margin-top: 0;
-  line-height: 0.8;
-  margin: 50px 0 50px 45px;
+  -webkit-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
-.top-week h2 span {
-  position: relative;
+.movie-news__item:hover .thumbnails {
+  background-color: #df8a13;
 }
 
-.top-week h2 span::before {
-  content: '';
-  position: absolute;
-  width: 1920px;
-  background-color: rgba(223, 138, 19, 0.45);
-  top: 16px;
-  right: 106%;
-  height: 3px;
+.movie-news__item:hover h3 {
+  color: #df8a13;
 }
 
-.top-week h2 span::after {
-  content: '';
-  position: absolute;
-  width: 1920px;
-  background-color: rgba(223, 138, 19, 0.45);
-  bottom: 9px;
-  left: 105%;
-  height: 3px;
+.movie-news__item:hover .btn {
+  background-color: #df8a13;
+}
+
+.movie-news .thumbnails {
+  padding: 4px;
+  border: 1px solid #ddd;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.movie-news .thumbnails img {
+  max-width: 100%;
+}
+
+.movie-news__text {
+  text-align: justify;
+}
+
+.movie-news .btn {
+  float: right;
+  margin-bottom: 50px;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .vertical-slider {

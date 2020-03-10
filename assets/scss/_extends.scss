@@ -36,3 +36,35 @@
   padding-right: $gap / 2;
   margin-bottom: $gap;
 }
+
+%h2-main {
+  font-size: 2.5rem;
+  font-family: $font-header;
+  margin-top: 0;
+  line-height: 0.8;
+  margin: 50px 0 50px 45px;
+
+  span {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1920px;
+      background-color: rgba($color-accent, 0.45);
+      top: 16px;
+      right: 106%;
+      height: 3px;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1920px;
+      background-color: rgba($color-accent, 0.45);
+      bottom: 11px;
+      left: 105%;
+      height: 3px;
+    }
+  }
+}
