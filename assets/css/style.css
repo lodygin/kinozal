@@ -512,21 +512,6 @@ a:hover, a:focus {
   padding: 0;
 }
 
-.footer__link {
-  text-align: center;
-  display: block;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.footer__link:hover, .footer__link:focus {
-  color: #ffffff;
-}
-
-.footer-e {
-  margin: 20px 0;
-}
-
 .footer h4 {
   color: #ffffff;
 }
@@ -547,6 +532,10 @@ a:hover, a:focus {
 .footer-d a:hover,
 .footer-d a:focus {
   color: #ffffff;
+}
+
+.footer .container .row {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
@@ -599,6 +588,9 @@ a:hover, a:focus {
   }
   .film-video h1 {
     font-size: 2rem;
+  }
+  .film-video__item-info {
+    margin: 0 5px;
   }
   .description h2 {
     font-size: 1.75rem;

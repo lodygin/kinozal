@@ -41,6 +41,11 @@
 
   &__item-info {
     margin: 0 13px;
+
+    @include xs {
+      margin: 0 5px;
+    }
+
     .badge {
       font-size: 0.8em;
     }
